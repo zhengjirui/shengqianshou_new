@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+    <com.lechuang.lqsq.widget.CirclePagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        custom:circle_indicator_color="@color/white"
+        custom:circle_indicator_fill_color="@color/main"
+        custom:circle_indicator_follow="true"
+        custom:circle_indicator_indicator_radius="3.5dp"
+        custom:circle_indicator_radius="3.5dp"
+        custom:circle_indicator_space="6dp"
+        custom:circle_indicator_stroke_color="@color/white"
+        custom:circle_indicator_stroke_width="0dp" />
+
+
+</RelativeLayout>

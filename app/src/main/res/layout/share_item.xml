@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="90dp"
+    android:layout_height="90dp">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/share_item_iamgeview"/>
+
+    <ImageButton
+        android:id="@+id/share_item_select"
+        android:background="@drawable/chuangjian_gouxuan_selector"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+</RelativeLayout>

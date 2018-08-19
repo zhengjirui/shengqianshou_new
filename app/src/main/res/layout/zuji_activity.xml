@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_e2e1e1"
+    android:orientation="vertical">
+
+    <include layout="@layout/bg_title" />
+
+    <include layout="@layout/common_dialog_loading" />
+
+    <include layout="@layout/activity_error" />
+
+    <com.lechuang.lqsq.widget.views.refeshview.XRecyclerView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.lechuang.lqsq.widget.views.refeshview.XRecyclerView>
+
+    <include layout="@layout/common_nothing_data" />
+</LinearLayout>

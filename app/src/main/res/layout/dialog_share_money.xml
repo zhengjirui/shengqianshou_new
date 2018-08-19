@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popwindow"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                style="@style/sp16BlackTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/share_show" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                style="@style/sp16BlackTextView"
+                android:layout_marginRight="20dp"
+                android:text="取消"
+                android:textColor="@color/rgb_757575" />
+
+            <TextView
+                android:id="@+id/tv_send"
+                style="@style/sp16BlackTextView"
+                android:layout_marginRight="15dp"
+                android:text="继续分享"
+                android:textColor="@color/color_ff5c19" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/rgb_757575" />
+
+        <TextView
+            android:id="@+id/tv_daili"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="马上成为代理"
+            android:textColor="@color/color_ff5c19"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

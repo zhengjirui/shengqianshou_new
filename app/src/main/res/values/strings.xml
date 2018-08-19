@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">省钱手</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_header_hint_release">释放立即刷新</string>
+    <string name="listview_loading">正在加载...</string>
+    <string name="nomore_loading">我是有底线的</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="home">首页</string>
+    <string name="tipoff">爆料</string>
+    <string name="live">直播</string>
+    <string name="soufanli">超级搜</string>
+    <string name="get">分享赚</string>
+    <string name="own">我的</string>
+    <string name="editbaoliao">请输入关键字</string>
+    <string name="all_char">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@._</string>
+
+    <string name="thesun_comment">商品评价:</string>
+    <string name="thesun_time">发布时间:</string>
+    <string name="seeAll">查看全部</string>
+    <string name="select">选择</string>
+    <string name="preview">预览</string>
+    <string name="confirm">完成</string>
+    <!--网络连接-->
+    <string name="net_error_toast">目前处于无网络状态!</string>
+    <string name="net_error_toast1">请检查网络是否连接</string>
+    <string name="net_error">网络异常，请检查网络</string>
+    <string name="net_error1">亲！您的网络开小差了哦</string>
+    <!--提示语-->
+    <string name="no_emoji">输入内容不能包含表情等字符</string>
+    <string name="loading">加载中,请稍后...</string>
+    <string name="search_show">粘贴商品标题搜索优惠券</string>
+    <string name="share_show">您目前不是代理,分享暂无积分</string>
+    <string name="parm_fail">获取参数出错！</string>
+
+
+    <!--商品分享后台给的分享文案 不包含 "{选择分享渠道后生成淘口令}"  时报的提示-->
+    <string name="share_error1">分享出错,错误码0001,请联系管理员</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="remind_nothing_mine">点击右上角的开关，找到您要购买的商品</string>
+    <string name="remind_nothing_all">没找到商品，请用其他关键词试试哦!</string>
+    <!--<string name="jd">https://union-click.jd.com/jdc?d=yV8e1g</string>-->
+    <string name="jd">http://shengqianshou.com/</string>
+    <!--<string name="wph">https://click.union.vip.com/redirect.php?url=eyJtb25pdG9yU3BvdENvZGUiOiJDMDFWNGtyYWozMWp2bTJjIiwic2NoZW1lY29kZSI6Im1hcHkzYzZ6IiwibWFyayI6ImhGTSxoRk0sIiwiZGVzdHVybCI6Imh0dHBzOi8vbS52aXAuY29tLyMhaGFzaCIsInVjb2RlIjoiZzdoczR3a3EifQ==</string>-->
+    <string name="wph">https://click.union.vip.com/redirect.php?code=RSXgHPn</string>
+</resources>

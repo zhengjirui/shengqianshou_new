@@ -1,0 +1,25 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.lechuang.lqsq.widget.views.refeshview.XRecyclerView
+        android:id="@+id/get_product"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_top"
+        android:visibility="invisible" />
+
+    <include
+        layout="@layout/common_dialog_loading"
+        android:visibility="gone" />
+</FrameLayout>

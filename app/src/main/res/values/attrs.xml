@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundedImageView">
+        <!--边缘的弧度数-->
+        <attr name="corner_radius" format="dimension" />
+        <!--描边的宽度-->
+        <attr name="border_width_img" format="dimension" />
+        <!--描边的颜色-->
+        <attr name="border_color_img" format="color" />
+        <!--背景是否变化-->
+        <attr name="mutate_background" format="boolean" />
+        <!--是否为圆形-->
+        <attr name="oval" format="boolean" />
+        <!--拉伸的方式-->
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="TagFlowLayout">
+        <attr name="max_select" format="integer"></attr>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--自动滚动文字样式-->
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="DashView">
+        <attr name="dashWidth" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="dashOrientation" format="integer" />
+
+    </declare-styleable>
+    <declare-styleable name="CirclePagerIndicator">
+        <attr name="circle_indicator_centerHorizontal" format="boolean" />
+        <attr name="circle_indicator_follow" format="boolean" />
+        <attr name="circle_indicator_orientation" format="reference" />
+        <attr name="circle_indicator_color" format="color" />
+        <attr name="circle_indicator_stroke_color" format="color" />
+        <attr name="circle_indicator_stroke_width" format="dimension" />
+        <attr name="circle_indicator_fill_color" format="color" />
+        <attr name="circle_indicator_radius" format="dimension" />
+        <attr name="circle_indicator_space" format="dimension" />
+        <attr name="circle_indicator_indicator_radius" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义Dialog主题 -->
+    <style name="BottomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <!--<item name="android:windowAnimationStyle">@style/BottomDialogAnimation</item>-->
+    </style>
+</resources>

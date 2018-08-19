@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+
+                >
+                <ImageView
+                    android:id="@+id/riv_user_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/pic_morentouxiang"
+                    android:background="@drawable/bg_shouji_userimg"
+                    android:padding="1dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/riv_user_photo"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/miantext"
+                    android:textSize="16sp"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/riv_user_photo"
+                    android:layout_alignBottom="@+id/riv_user_photo"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/color_cccccc"
+                    android:textSize="12sp"
+                    android:text="2018-05 20:22"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    >
+                    <TextView
+                        android:id="@+id/tv_chakan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shouji_chankan_share_circle"
+                        android:textSize="14sp"
+                        android:textColor="@color/main"
+                        android:text="查看"
+                        android:visibility="gone"
+                        />
+                    <TextView
+                        android:id="@+id/tv_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shouji_chankan_share_circle"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/main"
+                        android:text="分享"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_onekey_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_shouji_onkeyshare_circle"
+                        android:drawableLeft="@drawable/shouji_share_img"
+                        android:textSize="14sp"
+                        android:textColor="@color/main"
+                        android:text="一键分享"
+                        android:visibility="gone"
+                        />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/miantext"
+            android:textSize="14sp"
+            android:text=""
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pinglun"
+            android:padding="5dp"
+            >
+            <TextView
+                android:id="@+id/tv_pinglu_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论:"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/tv_pinglun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_pinglu_btn"
+                android:layout_toLeftOf="@+id/tv_copy"
+                android:textSize="14sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/tv_pinglun"
+                android:background="@drawable/bg_shouji_copy_circle"
+                android:textSize="14sp"
+                android:textColor="@color/rgb_007aff"
+                android:text="复制"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="5dp"
+          android:background="@color/color_f6f7f8" />
+
+</LinearLayout>

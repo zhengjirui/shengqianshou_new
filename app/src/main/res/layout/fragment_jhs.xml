@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5f5f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_dialog_loading" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="已经加载完毕，没有数据哦" />
+
+    <com.lechuang.lqsq.widget.views.refeshview.XRecyclerView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.lechuang.lqsq.widget.views.refeshview.XRecyclerView>
+</LinearLayout>

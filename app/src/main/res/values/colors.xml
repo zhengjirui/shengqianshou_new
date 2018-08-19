@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">@color/color_ffd705</color>
+    <color name="colorPrimary">@color/color_666666</color>
+    <color name="colorPrimaryDark">@color/color_ffed96</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_cccbcb">#cccbcb</color>
+    <color name="line_view_color">#D9D9D9</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_c9c9c9">#C9C9C9</color>
+    <color name="color_41ba76">#41ba76</color>
+    <color name="color_bdbdbd">#BDBDBD</color>
+    <color name="color_ffd705">#FFD705</color>
+    <color name="color_ffd507">#ffd507</color>
+    <color name="color_ffcd64">#FFCD64</color>
+    <color name="color_734d0a">#734D0A</color>
+    <color name="color_f6f7f8">#f6f7f8</color>
+    <color name="color_f1f1f1">#f1f1f1</color>
+    <color name="color_e5e5e5">#E5E5E5</color>
+    <color name="color_dbd8d8">#DBD8D8</color>
+    <color name="color_f47209">#f47209</color>
+    <color name="color_929190">#929190</color>
+    <color name="color_535353">#535353</color>
+    <color name="color_ec5a5a">#EC5A5A</color>
+    <color name="color_734d09">#734d09</color>
+    <color name="color_c7c7c7">#C7C7C7</color>
+    <color name="color_cecdcd">#CECDCD</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_aaaaaa">#AAAAAA</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_f8be59">#F8BE59</color>
+    <color name="color_f85b6a">#F85B6A</color>
+    <color name="color_f85b5b">#F85B5B</color>
+    <color name="color_cfb356">#cfb356</color>
+    <color name="c_494949">#494949</color>
+    <color name="c676767">#676767</color>
+    <color name="color_e60214">#e60214</color>
+
+    <color name="color_6F490A">#6F490A</color>
+    <color name="color_58b884">#58b884</color>
+    <color name="app_theme_color">#00B0D8</color>
+
+
+    <color name="button_pressed">#fff8be59</color>
+    <color name="button_normal">#ffffd705</color>
+
+    <color name="yellow1">#ffffcd64</color>
+    <color name="common">#fff1f1f1</color>
+    <color name="actionbar">#ffb6b4b4</color>
+
+    <color name="titlebarbg">#ffffd705</color>
+    <color name="title">#ff734d09</color>
+    <color name="trans">#00000000</color>
+    <color name="button">#ff6f490a</color>
+    <color name="line">#ffd9d9d9</color>
+    <color name="driverState">#ff734d0a</color>
+
+    <color name="textColor">#ff333333</color>
+    <color name="themes_main">#d03b3b</color>
+    <color name="black_54">#89000000</color>
+
+    <!-- 栗色 -->
+    <color name="gray">#ffd0d0d0</color>
+    <color name="black">#ff111111</color>
+    <color name="rgb_fe596c">#fe596c</color>
+    <color name="color_ffd400">#ffd400</color>
+    <color name="color_020202">#020202</color>
+    <color name="color_303a6a">#303a6a</color>
+    <color name="color_ffed09">#ffed09</color>
+    <color name="color_0c0c09">#0c0c09</color>
+    <color name="color_243ba0">#243ba0</color>
+    <color name="color_ffed96">#ffed96</color>
+    <color name="color_3b7bf2">#3b7bf2</color>
+    <color name="color_title">#7d7d7d</color>
+    <color name="color_ff0b0b">#ff0b0b</color>
+    <color name="color_57c1af">#57c1af</color>
+    <color name="color_e6e8e9">#e6e8e9</color>
+    <color name="color_282c37">#282c37</color>
+    <color name="color_7e808c">#7e808c</color>
+    <color name="color_e2e1e1">#e2e1e1</color>
+    <color name="color_fd9f9f">#fd9f9f</color>
+    <color name="color_f4f1f1">#f4f1f1</color>
+    <color name="color_ff5c19">#ff5c19</color>
+    <color name="color_5d5d5d">#5d5d5d</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_9b9b9b">#9b9b9b</color>
+    <color name="color_f7f7f7">#f7f7f7</color>
+    <color name="color_F3F3F5">#F3F3F5</color>
+    <color name="color_c8c8c8">#c8c8c8</color>
+    <color name="color_d8d8d8">#d8d8d8</color>
+    <color name="color_cccccc">#ccc</color>
+    <color name="miantext">#757575</color>
+    <color name="transparent">#00000000</color>
+    <color name="dialog_text_color_1">#eee</color><!--自定义dialog-->
+    <color name="dialog_text_color_2">#ff0f82fe</color><!--自定义dialog-->
+    <color name="rgb_ff6b80">#ff6b80</color>
+    <color name="rgb_f7f7f7">#f7f7f7</color>
+    <color name="rgb_f4f4f4">#f4f4f4</color>
+    <color name="rgb_e5e5e5">#e5e5e5</color>
+    <color name="rgb_757575">#757575</color>
+    <color name="rgb_fd758e">#fd758e</color>
+    <color name="rgb_aaa">#aaa</color>
+    <color name="rgb_eee">#eee</color>
+    <color name="rgb_b8b8b8">#b8b8b8</color>
+    <color name="rgb_464646">#464646</color>
+    <color name="rgb_646464">#646464</color>
+    <color name="rgb_f37c05">#f37c05</color>
+    <color name="rgb_01b4b2">#CD0000</color>
+    <color name="rgb_00000000">#00000000</color>
+    <color name="rgb_00b5b0">#CD0000</color>
+    <color name="rgb_ff33c32">#ff3c32</color>
+    <color name="rgb_007aff">#007aff</color>
+    <color name="cf62c52">#f62c52</color>
+    <color name="cdbdbdb">#dbdbdb</color>
+    <color name="rgb_f62c52">#f62c52</color>
+    <color name="c4a4a4a">#4a4a4a</color>
+    <color name="veeeeee">#eeeeee</color>
+    <color name="c017cff">#017cff</color>
+    <color name="title_name">#ff6b80</color>
+    <color name="add_33ffff">#33ffffff</color>
+    <color name="c979797">#979797</color>
+    <color name="cFC3528">#FC3528</color>
+    <color name="rgb_666666">#666666</color>
+    <color name="c828282">#828282</color>
+    <color name="cD8D8D8">#d8d8d8</color>
+    <color name="c9c9c9c">#9c9c9c</color>
+    <color name="rgb_CCCCCC">#CCCCCC</color>
+    <color name="c9b9b9b">#9b9b9b</color>
+    <color name="title_line">#eee</color>
+    <color name="rgb_EEEEEE">#EEEEEE</color>
+
+    <color name="rgb_FF6063">#FF6063</color>
+    <color name="rgb_D8D8D8">#D8D8D8</color>
+    <color name="rgb_929292">#929292</color>
+    <color name="rgb_E0DFE4">#E0DFE4</color>
+    <color name="rgb_F62C52">#F62C52</color>
+    <color name="rgb_C9C9C9">#C9C9C9</color>
+    <color name="rgb_969696">#969696</color>
+    <color name="rgb_919191">#919191</color>
+    <color name="rgb_acacac">#acacac</color>
+    <color name="c_ff0000">#ff0000</color>
+    <!--主题色-->
+    <color name="main">#ff5c19</color>
+    <color name="login_up">#CD0000</color>
+    <color name="login_down">#ffdddd</color>
+    <color name="rgb_6a6a">#6A6A6A</color>
+
+    <color name="c_F4F4F4">#F4F4F4</color>
+    <color name="c_FC90CC">#CD0000</color>
+    <color name="c_646464">#646464</color>
+    <color name="c_1F1F1F">#1F1F1F</color>
+    <color name="c_C8C8C8">#C8C8C8</color>
+    <color name="c_323232">#323232</color>
+    <color name="c_848484">#848484</color>
+    <color name="c_B4B4B4">#B4B4B4</color>
+    <color name="c_F32353">#F32353</color>
+    <color name="c_FFF4E1">#FFF4E1</color>
+    <color name="c_FB4EB1">#CD0000</color>
+    <color name="c_F2F2F2">#F2F2F2</color>
+    <color name="c_444444">#444444</color>
+    <color name="c_6A6A6A">#6A6A6A</color>
+    <color name="c_8B8B8B">#8B8B8B</color>
+    <color name="c_F3F3F3">#F3F3F3</color>
+    <color name="c_FF464E">#FF464E</color>
+    <color name="c_65ABFB">#65ABFB</color>
+    <color name="c_7CDB00">#7CDB00</color>
+    <color name="c_C2C2C2">#C2C2C2</color>
+    <color name="c_5C5C5C">#5C5C5C</color>
+    <color name="c_696969">#696969</color>
+    <color name="c_676767">#676767</color>
+    <color name="c_FAFAFA">#FAFAFA</color>
+    <color name="c_F5F5F5">#F5F5F5</color>
+    <color name="c_4A4A4A">#4A4A4A</color>
+    <color name="c_9B9B9B">#9B9B9B</color>
+    <color name="c_454545">#454545</color>
+    <color name="c_F8F8F8">#F8F8F8</color>
+    <color name="c_5D5D5D">#5D5D5D</color>
+    <color name="c_ADADAD">#ADADAD</color>
+    <color name="c_4CFFFFFF">#4CFFFFFF</color>
+    <color name="c_66000000">#66000000</color>
+    <color name="c_B2FFFFFF">#B2FFFFFF</color>
+    <!--00%=FF（不透明）     5%=F2     10%=E5    15%=D8    20%=CC
+        25%=BF    30%=B2    35%=A5    40%=99    45%=8c    50%=7F
+        55%=72    60%=66    65%=59    70%=4c    75%=3F    80%=33
+        85%=21    90%=19    95%=0c    100%=00（全透明）-->
+
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/normal_title" />
+
+    <EditText
+        android:id="@+id/nc_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FAFAFA"
+        android:gravity="center_vertical"
+        android:hint="请输入昵称"
+        android:lines="1"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/color_cccccc"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="4-20个字符，可由中英文、数字、符号组成"
+        android:textColor="#929292"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/comlete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/normal_ff5c19_bg"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

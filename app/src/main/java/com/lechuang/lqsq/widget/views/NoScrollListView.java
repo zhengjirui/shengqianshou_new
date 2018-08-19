@@ -1,0 +1,39 @@
+package com.lechuang.lqsq.widget.views;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.ListView;
+
+/**
+ * 作者：尹松涛.
+ * 邮箱：yinsongtaoshmily@outlook.com
+ * 日期：2018/02/01
+ * 时间：14:56
+ * 描述：不能滚动的ListView
+ */
+
+public class NoScrollListView extends ListView {
+
+    public NoScrollListView(Context context) {
+        super(context);
+    }
+
+    public NoScrollListView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public NoScrollListView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+    }
+
+    @Override
+    public void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        int expandSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
+        super.onMeasure(widthMeasureSpec, expandSpec);
+    }
+
+    @Override
+    public void smoothScrollBy(int distance, int duration) {
+        super.smoothScrollBy(distance, duration);
+    }
+}

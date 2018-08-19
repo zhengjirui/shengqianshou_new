@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4d000000"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="232dp"
+        android:layout_height="333dp"
+        android:background="@drawable/bg_corners5_solid_white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/qiandao_dialog_bg" />
+
+            <ImageView
+                android:id="@+id/iv_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:padding="10dp"
+                android:src="@mipmap/qd_close" />
+
+        </FrameLayout>
+
+        <GridView
+            android:id="@+id/gv_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:horizontalSpacing="0dp"
+            android:listSelector="@color/black"
+            android:numColumns="7"
+            android:paddingTop="80dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

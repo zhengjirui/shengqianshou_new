@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/home_below_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/rv_showye"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/shouye" />
+
+            <TextView
+                android:id="@+id/tv_shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="首页"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rv_fenlei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_fenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/fenlei_1" />
+
+            <TextView
+                android:id="@+id/tv_fenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="分类"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rv_yaoqing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_yaoqing"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_shengqianshou" />
+
+            <TextView
+                android:id="@+id/tv_yaoqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="省钱手记"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rv_chaojisou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_chaoisou"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/chaojisou" />
+
+            <TextView
+                android:id="@+id/tv_chaojisou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="直播间"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rv_wode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onTabClick"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:focusable="false"
+                android:scaleType="centerInside"
+                android:src="@drawable/main_wode" />
+
+            <TextView
+                android:id="@+id/tv_wode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="我的"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/temp1"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_above="@+id/home_below_bar"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/temp1"
+        android:layout_gravity="center|top" />
+
+</RelativeLayout>

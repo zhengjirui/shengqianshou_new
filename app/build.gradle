@@ -1,0 +1,180 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'android-apt'
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+    lintOptions {
+
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+        multiDexEnabled true
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField("String", "BASE_URL", "\"http://app.shengqianshou.com/\"")
+//        buildConfigField("String", "BASE_URL", "\"http://192.168.1.181:8886/\"")
+        buildConfigField("String", "buildTime", "\"${getTime()}\"")
+
+        buildConfigField("String", "wxAppid", "\"wx389d2b396229fda4\"")
+        buildConfigField("String", "wxqianming", "\"e08cf6f4d8a2f9c490fca6d92538c391\"")
+        buildConfigField("String", "qqAppid", "\"1106660178\"")
+        buildConfigField("String", "qqAppkey", "\"9yBxC1JJKQ61Akxm\"")
+        buildConfigField("String", "umengKey", "\"59b7b383a32511714a0001d5\"")
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.lechuang.shengqianshou",
+                JPUSH_APPKEY : "434167c23625536a57bb5ef7", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'android'
+            keyPassword '123456'
+            storeFile file('android.jks')
+            storePassword '123456'
+        }
+        release {
+            keyAlias 'android'
+            keyPassword '123456'
+            storeFile file('android.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+//    applicationVariants.all { variant ->
+//        variant.outputs.each { output ->
+//            def outputFile = output.outputFile
+//            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}(${defaultConfig.versionCode})-${getTime()}.apk").replace("app-debug", "lqsq")
+//                output.outputFile = new File(outputFile.parent, fileName)
+//            }
+//        }
+//    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            if (output.outputFile != null && output.outputFile.name.endsWith('.apk')
+                    && 'release'.equals(variant.buildType.name)) {
+                //as3.0之后，这里的一段需要修改成这样
+                output.outputFileName = "${defaultConfig.versionName}_v${defaultConfig.versionCode}_${getTime()}.apk"
+            }
+        }
+    }
+
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+
+
+String getTime() {
+    return new Date().format("MMddHHmm")
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':PullToRefresh')
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v13:23.4.0'
+    compile "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
+    compile "com.android.support:support-v4:$rootProject.ext.supportVersion"
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'io.reactivex:rxjava:1.1.7'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.bumptech.glide:okhttp-integration:1.4.0'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.alibaba:fastjson:1.2.9'
+    compile 'com.alibaba.alipay:alipaySingle:20160825@jar'
+    compile 'com.ali.auth.sdk:alibabauth_core:1.1.4@jar'
+    compile 'com.ali.auth.sdk:alibabauth_ui:1.1.4@aar'
+    compile 'com.ali.auth.sdk:alibabauth_ext:1.1.4@jar'
+    compile 'com.ali.auth.sdk:alibabauth_accountlink:1.1.4@jar'
+    compile 'com.taobao.android:securityguardaar3:5.1.81@aar'
+    compile 'com.taobao.android:securitybodyaar3:5.1.25@aar'
+    compile 'com.taobao.android:mtopsdk_allinone_open:1.2.2.4@jar'
+    compile 'com.taobao.android:alibc_applink:2.0.0.9@jar'
+    compile 'com.taobao.android:utdid4all:1.1.5.3_proguard@jar'
+    compile 'com.alibaba.mtl:app-monitor-sdk:2.5.1.3_for_bc_proguard@jar'
+    compile 'com.alibaba.sdk.android:alibc_trade_sdk:3.1.1.11@aar'
+    compile 'com.alibaba.mobileim:IMCore:2.0.2.1@aar'
+    compile 'com.alibaba.mobileim:IMKit:2.0.2.1@aar'
+    compile 'com.google.zxing:android-core:3.3.0'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.jude:rollviewpager:1.4.5'
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.24'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'cn.jiguang.sdk:jpush:3.0.9'
+    // 此处以JPush 3.0.9 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    // 此处以JCore 1.1.7 版本为例。
+    //    compile 'com.umeng.sdk:common:latest.integration'
+    //    compile 'com.umeng.sdk:analytics:latest.integration'
+    compile 'com.androidkun:XTabLayout:1.1.4'
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-5'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile files('libs/SecurityEnvSDK-release-1.1.0.jar')
+    compile files('libs/umeng-common-1.5.3.jar')
+    compile files('libs/umeng-share-QQ-simplify-6.9.2.jar')
+    compile files('libs/umeng-share-wechat-simplify-6.9.2.jar')
+    compile files('libs/umeng-shareboard-widget-6.9.2.jar')
+    compile files('libs/umeng-share-core-6.9.2.jar')
+    compile files('libs/umeng-sharetool-6.9.2.jar')
+    compile files('libs/umeng-analytics-7.4.0.jar')
+//    compile 'com.bm.photoview:library:1.4.1'
+    //https://github.com/chrisbanes/PhotoView
+    //https://github.com/bm-x/PhotoView
+}

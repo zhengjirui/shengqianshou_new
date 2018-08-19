@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/bg_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.lechuang.lqsq.widget.views.refeshview.XRecyclerView
+            android:id="@+id/rv_profit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <include
+            layout="@layout/common_nothing_data"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

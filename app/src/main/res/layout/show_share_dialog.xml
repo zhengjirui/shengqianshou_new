@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/share_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/share_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_weixin"
+            android:gravity="center"
+            android:text="微信"
+            />
+
+        <TextView
+            android:id="@+id/share_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_weixin_friends"
+            android:gravity="center"
+            android:text="朋友圈"
+            />
+
+        <TextView
+            android:id="@+id/share_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_qq"
+            android:gravity="center"
+            android:text="QQ"
+            />
+
+        <TextView
+            android:id="@+id/share_qq_kongjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_qq_kongjian"
+            android:gravity="center"
+            android:text="QQ空间"
+            />
+
+        <TextView
+            android:id="@+id/share_sinawbo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/share_sina_wb"
+            android:gravity="center"
+            android:text="新浪微博"
+            />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/share_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
